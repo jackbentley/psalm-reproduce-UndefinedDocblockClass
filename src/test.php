@@ -15,6 +15,9 @@ class Foo {
      * @return string
      */
     public function bar() {
-        return $this->ado->qstr('foobar');
+        /** @var string $response */
+        $response = $this->ado->qstr('foobar');
+
+        return $response;
     }
 }
